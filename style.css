@@ -1,0 +1,214 @@
+:root {
+    --default-primary-color: #2196f3;
+    --primary-color: #3B71CA;
+    --disabled-color: #9FA6B2;
+    --success-color: #14A44D;
+    --danger-color: #DC4C64;
+}
+
+body {
+    background: #f5f0f0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    background: #fff;
+    width: 650px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 150px auto;
+    padding: 2.5rem 3rem;
+    border-radius: 5px;
+
+}
+
+
+/* default text for btns */
+.default-text {
+    color: var(--disabled-color);
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-style: italic;
+    font-weight: 600;
+    margin-top: 0.3rem;
+    margin-left: 0.5rem;
+}
+
+/* buttons */
+.btn-default-primary,
+.btn-default-primary-down,
+.btn-hover-primary,
+.btn-hover-primary-down,
+.btn-disabled-primary,
+.btn-disabled-primary-down {
+    cursor: pointer;
+    border: none;
+    background: var(--default-primary-color);
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    border-radius: 3px;
+    font-size: 0.8rem;
+}
+
+.btn-default-primary-down,
+.btn-hover-primary-down,
+.btn-disabled-primary-down {
+    margin: 0.4rem 0.3rem;
+}
+
+.btn-default-secondary-down,
+.btn-hover-secondary-down,
+.btn-disabled-secondary-down {
+    margin: 0.39rem 0.3rem 0.30rem;
+}
+
+.btn-hover-primary,
+.btn-hover-primary-down {
+    background: var(--primary-color);
+}
+
+.btn-hover-primary:hover,
+.btn-hover-primary-down:hover {
+    background: var(--default-primary-color);
+}
+
+.btn-disabled-primary,
+.btn-disabled-primary-down {
+    background: var(--disabled-color);
+    padding: 0.55rem 1.2rem;
+}
+
+/* seconda row btn */
+.btn-default-secondary,
+.btn-default-secondary-down,
+.btn-hover-secondary,
+.btn-hover-secondary-down,
+.btn-disabled-secondary,
+.btn-disabled-secondary-down {
+    cursor: pointer;
+    border: 1px solid var(--default-primary-color);
+    background: transparent;
+    color: var(--default-primary-color);
+    padding: 0.6rem 1.2rem;
+    border-radius: 3px;
+    font-size: 0.8rem;
+}
+
+.btn-hover-secondary,
+.btn-hover-secondary-down {
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.btn-hover-secondary:hover,
+.btn-hover-secondary-down:hover {
+    border: 1px solid var(--default-primary-color);
+    color: var(--default-primary-color);
+}
+
+.btn-disabled-secondary,
+.btn-disabled-secondary-down {
+    border: 1px solid var(--disabled-color);
+    color: var(--disabled-color);
+}
+
+
+.column {
+    display: flex;
+    justify-content: space-between;
+}
+
+.default-btn,
+.hover-btn,
+.disabled-btn {
+    display: flex;
+}
+
+/* other styles */
+.other-styles {
+    padding-top: 1.5rem;
+    line-height: 1.4;
+}
+
+.page-header {
+    padding-right: 4rem;
+}
+
+.main-header h1 {
+    font-weight: 500;
+    font-size: 1.7rem;
+}
+
+.seconda-header h2 {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+#main-default-text {
+    font-size: 0.9rem;
+    width: 290px;
+}
+
+#link-example {
+    color: var(--default-primary-color);
+    text-decoration: none;
+}
+
+#second-default-text {
+    font-size: 0.8rem;
+    color: var(--disabled-color);
+}
+
+#hover-link-example {
+    color: var(--default-primary-color);
+}
+
+/* badges */
+.primary-badge,
+.success-badge,
+.danger-badge {
+    text-decoration: none;
+    background: var(--default-primary-color);
+    color: #fff;
+    font-size: 0.7rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 40px;
+}
+
+.success-badge {
+    background: var(--success-color);
+}
+
+.danger-badge {
+    background: var(--danger-color);
+}
+
+span {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 2px 6px;
+    margin-left: 0.2rem;
+}
+
+/* card */
+.card-content {
+    box-shadow: 0px 0px 3px 3px rgb(238, 239, 240);
+    border-radius: 5px;
+    padding: 0.4rem 0.8rem;
+}
+
+.card-content p {
+    font-size: 0.9rem;
+}
+
+.card-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-title i {
+    color: var(--disabled-color);
+    padding-top: 1.5rem;
+}
